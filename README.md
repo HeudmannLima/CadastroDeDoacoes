@@ -3,12 +3,12 @@ App Web / Mobile para cadastro de Casos para usuários ter como fazer doações 
 
 
 ## BACK END
-- [Nodejs] (https://github.com/HeudmannLima/CadastroDeDoacoes/backend)
+- [Nodejs] 
 
 
 ## FRONT END
-- [React] (https://github.com/HeudmannLima/CadastroDeDoacoes/frontend)
-- [React Native] (https://github.com/HeudmannLima/CadastroDeDoacoes/mobile)
+- [React] 
+- [React Native] 
 
 
 ## BACK END
