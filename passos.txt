@@ -1,0 +1,25 @@
+INICIO PROJETO
+1. npm init -y
+2. npm install express
+3. criar index.js na raiz
+4. yarn add nodemon -D
+
+VAMOS USAR O ORM KNEX.JS para o BD SQLITE
+5. npm install knex     (orm)
+6. npm install sqlite3  (driver do sqlite3)
+7. npx knex init        (vai ser criado o knexfile.js)
+8. mudar o path do sqlite no knexfile.js pra './src/database/db.sqlite' e useNullAsDefault: true
+
+MIGRATIONS (CRIA TABELA E MANTEM HISTORICO) + CONFIG 
+09. criar dentro de /src/database/ a pasta /migrations, e colocar ela no knexfile
+10. npx knex migrate:make create_ongs (nome da migration)
+11. editar o up(createTable) e down(rollback drop) no migration criado
+12. npx knex migrate:latest (para executar o migration/criar a tabela) 
+12.1 npx knex migrate:rollback (para deletar dropar a ultima alteração/dropar a tab)
+12.2 npx knex migrate:status (mostra status/todas as migrations executadas)
+
+PARA A GENTE GERAR A NOSSA ID DA TABELA ONG COM NOSSOS VALORES ALEATORIOS
+13. biblioteca CRYPTO
+
+COLOCAR O CORS no app use express no index.js
+14. npm install cors
