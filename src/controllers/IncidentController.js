@@ -18,7 +18,8 @@ module.exports = {
       ong_id,
     });
 
-    console.log(id);
+    request.io.emit('novo_caso');
+
     return response.json({ id });
   },
 
@@ -90,6 +91,8 @@ module.exports = {
     }
 
     await connection('incidents').where('id', id).del();
+
+    request.io.emit('deleta_caso');
 
     //204 dá o ok sem mandar nenhuma resposta
     return response.status(204).send();
